@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Public Sans', sans-serif;
   }
 
 /*nav section*/
@@ -39,7 +40,6 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Public Sans', sans-serif;
     text-align: center;
     position: relative;
     width: fit-content;
@@ -64,6 +64,8 @@
 
 .wel-text{
     display: grid;
+    justify-items: center;
+    margin: 0px 20px;
 }
 .wel-img-pc{
     display: none;
@@ -81,22 +83,17 @@
     margin: auto;
 }
 .wel-heading{
-    width: 90vw;
-    display: grid;
-    margin: auto;
+    width: fit-content;
     text-align: center;
     font-size: 38px;
     font-weight: 400;
-    font-family: 'Public Sans', sans-serif;
     color: hsl(233, 26%, 24%);
 }
 .wel-para{
-    width: 80vw;
-    display: grid;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 400;
-    font-family: 'Public Sans', sans-serif;
     color: hsl(233, 8%, 62%);
     margin: 20px auto;
 }
@@ -122,6 +119,56 @@
 
 /*feature section*/
 
-.feature{
-    background-color: hsl(220, 16%, 96%);
+#feature{
+    background-color:  hsl(220, 16%, 96%);
+    padding:80px 20px;
+}
+/*feature text*/
+.feature-heading-text{
+    display: grid;
+    justify-items: center;
+}
+.feature-heading{
+    width: fit-content;
+    margin:0px auto 20px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 26%, 24%);
+}
+.feature-para{
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 8%, 62%);
+    margin: 0px auto 60px;
+}
+/*feature cards*/
+.feature-card{
+    display: grid;
+    row-gap: 10px;
+}
+.card{
+    display: grid;
+    justify-items: center;
+}
+.card-heading{
+    width: fit-content;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    margin: 20px 0px 0px;
+}
+.card-para{
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+    margin: 20px 0px;
 }
