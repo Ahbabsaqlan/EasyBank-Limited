@@ -26,8 +26,8 @@
     background-color:  hsl(0, 0%, 100%);
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    -webkit-box-shadow: 5px 5px 38px #737782, -5px -5px 38px #ffffff;
-    box-shadow: 5px 5px 38px #737782, -5px -5px 38px #ffffff;
+    -webkit-box-shadow: 5px 5px 38px #444547, -5px -5px 38px #313131;
+    box-shadow: 2px 2px 40px #444547, -2px -2px 40px #313131;
     display: grid;
     justify-items: center;
     position: absolute;
@@ -62,5 +62,60 @@
 
 /*welcome section*/
 
-
+.wel-text{
+    display: grid;
+}
+.wel-img-pc{
+    display: none;
+}
+.wel-img{
+    position: absolute;
+}
+.wel-phn-img{
+    width: 90vw;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-60px);
+    display: grid;
+    margin: auto;
+}
+.wel-heading{
+    width: 90vw;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 26%, 24%);
+}
+.wel-para{
+    width: 90vw;
+    display: grid;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 8%, 62%);
+    margin: 20px auto;
+}
+.wel-btn{
+    background-image: linear-gradient(to right, hsl(192, 70%, 51%) 0%, hsl(136, 65%, 51%)  51%, #70e1f5  100%);
+    margin: 10px 10px 80px;
+    padding: 13px 35px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 28px;
+    font-size: 14px;
+    font-family: 'Public Sans', sans-serif;
+    border: none;
+    place-self: center;
+}
+.wel-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
   
