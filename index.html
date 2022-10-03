@@ -3,6 +3,13 @@
 <head>
     <link rel="stylesheet" href="./style.css">      <!--main css link-->
     <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">   <!--tittle fevicon-->
+        <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--google font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fuzzy+Bubbles:wght@700&family=Grandstander:wght@700&family=Karla:wght@400;700&family=Koulen&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Open+Sans:wght@400;600;700&family=Permanent+Marker&family=Poppins:wght@700&family=Public+Sans:wght@300;400;700&family=Roboto+Flex:opsz,wght@8..144,500&family=Syne+Mono&family=Titan+One&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +17,39 @@
 </head>
 <body>
     <div class="main">
-        <section id="nav">
+        <section id="nav">                            <!--nav section-->
             <nav class="topnav">                      <!-- Top Navigation Menu -->  
                 <a href="#home" class="logo-link" >   <!--nav-logo link--> 
-                    <img class="logo" src="./content/images/logo.svg" alt="brand-logo">    
+                    <img class="logo" src="./images/logo.svg" alt="brand-logo">    
                 </a>
                 <div id="myLinks">                    <!--nav links-->
-                    <a class="active" href="#how-we-work">HOW WE WORK</a>
-                    <a class="active" href="#blog">BLOG</a>
-                    <a class="active" href="#account">ACCOUNT</a>
-                    <a class="active" href="#view-plans">VIEW PLANS</a>
+                    <a class="active" href="#Home">Home</a>
+                    <a class="active" href="#About">About</a>
+                    <a class="active" href="#Contact">Contact</a>
+                    <a class="active" href="#Blog">Blog</a>
+                    <a class="active" href="#Careers">Careers</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <i id="icon"class="fa fa-bars"></i>
                 </a>
             </nav>    
         </section>
+        
     </div>
+    <script>   //navbar-toggle-button-js
+        function myFunction() {
+          let icon = document.getElementById("icon");
+          console.log("icon", icon) 
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "grid") {
+            x.style.display = "none";
+            icon.className="fa fa-bars"
+          } else {
+            x.style.display = "grid";
+            icon.className="fa fa-xmark";
+          }
+        }
+    </script>
     
 </body>
 </html>
