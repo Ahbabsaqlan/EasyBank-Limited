@@ -134,7 +134,6 @@
     text-align: center;
     font-size: 34px;
     font-weight: 400;
-    font-family: 'Public Sans', sans-serif;
     color: hsl(233, 26%, 24%);
 }
 .feature-para{
@@ -171,4 +170,53 @@
     font-weight: 400;
     color: hsl(233, 8%, 62%);
     margin: 20px 0px;
+}
+
+/*articles section*/
+
+#article{
+    background-color: hsl(0, 0%, 98%);
+    padding:80px 20px;
+}
+.article-heading{
+    width: fit-content;
+    margin:0px auto 30px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+.article-card-prnt{
+    display: grid;
+    row-gap: 20px;
+}
+.art-card{
+    display: grid;
+}
+.art-card-img{
+    height: 200px;
+    width: 90vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-self: center;
+}
+.art-card-text{
+    display: grid;
+    row-gap: 15px;
+    padding: 30px 25px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.art-author{
+    font-size: 12px;
+    color: hsl(233, 8%, 62%);
+}
+.art-card-heading{
+    font-size: 17px;
+}
+.art-card-para{
+    font-size: 13px;
+    color: hsl(233, 8%, 62%);
+    line-height: 20px;
 }
