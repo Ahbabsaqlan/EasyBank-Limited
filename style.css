@@ -366,4 +366,32 @@
     }
 
     /*feature section*/
+
+    #feature{
+        padding:130px 8%;
+    }
+    /*feature text*/
+    .feature-heading{
+        width: 100%;
+        text-align: left;
+        font-size: 45px;
+    }
+    .feature-para{
+        text-align: left;
+        width: 60%;
+        justify-self: left;
+        font-size: 20px;
+        margin: 0px 0px 60px;
+    }
+    /*feature cards*/
+    .feature-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 45px;
+    }
+    .card{
+        justify-items: left;
+    }
+    .card-para{
+        text-align: left;
+    }
 }
