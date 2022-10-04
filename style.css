@@ -315,6 +315,7 @@
     .active:hover{
       color: hsl(233, 26%, 24%);
       padding: 28px 0px;
+      transition: 0.3s;
       border-bottom: 5px solid hsl(136, 65%, 51%);
     }
     .icon{
