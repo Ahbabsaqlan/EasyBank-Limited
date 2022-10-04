@@ -394,4 +394,26 @@
     .card-para{
         text-align: left;
     }
+
+    /*articles section*/
+
+    #article{
+        padding:100px 8%;
+    }
+    .article-heading{
+        margin:0px 0px 50px;
+        text-align: left;
+        font-size: 44px;
+    }
+    .article-card-prnt{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 45px;
+    }
+    .art-card-img{
+        height: 200px;
+        width: 266.5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        justify-self: center;
+    }
 }
