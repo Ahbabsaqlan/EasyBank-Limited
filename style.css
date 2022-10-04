@@ -20,7 +20,7 @@
   }
 .topnav #myLinks{
     height:40vh;
-    margin:20px 20px;
+    margin:20px 5%;
     padding: 10px 0px;
     width: 90vw;
     top: 70px;
@@ -31,6 +31,7 @@
     box-shadow: 2px 2px 40px #444547, -2px -2px 40px #313131;
     display: grid;
     justify-items: center;
+    justify-self: center;
     position: absolute;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     display: none;
@@ -214,6 +215,12 @@
 }
 .art-card-heading{
     font-size: 17px;
+    text-decoration: none;
+    color:hsl(233, 26%, 24%);
+    font-weight: 400;
+}
+.art-card-heading:hover{
+    color:hsl(136, 65%, 51%);
 }
 .art-card-para{
     font-size: 13px;
@@ -250,6 +257,9 @@
     text-decoration: none;
     color: white;
 }
+.footer-link:hover{
+    color: hsl(136, 65%, 51%);
+}
 .footer-btn-div{
     display: grid;
     justify-items: center;
@@ -267,6 +277,10 @@
     font-family: 'Public Sans', sans-serif;
     border: none;
     place-self: center;
+}
+.footer-btn:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
 }
 .footer-text{
     color: hsl(233, 8%, 62%);
