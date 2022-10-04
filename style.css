@@ -60,6 +60,9 @@
     padding: 6px 8px;
     
   }
+.nav-btn{
+    display: none;
+}
 
 /*welcome section*/
 
@@ -265,23 +268,57 @@
     justify-items: center;
 }
 .footer-btn{
-    background-image: linear-gradient(to right, hsl(192, 70%, 51%) 0%, hsl(136, 65%, 51%)  51%, #70e1f5  100%);
     margin: 40px 10px 30px;
-    padding: 13px 35px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    border-radius: 28px;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
-    border: none;
-    place-self: center;
-}
-.footer-btn:hover{
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
 }
 .footer-text{
     color: hsl(233, 8%, 62%);
+}
+
+/*desktop version*/
+
+@media (min-width:770px){
+
+    /*nav section*/
+  
+    .topnav{
+      position: relative;
+      height: 80px;
+    }
+    .logo-link{
+        top: 30px;
+        left: 8%;
+      }
+    .topnav #myLinks{
+      display: inline-block;
+      background-color: hsl(0, 0%, 100%);
+      height: 80px;
+      top: 0%;
+      padding: 0%;
+      margin:0px 0% 0px 35%;
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: max-content max-content max-content max-content max-content;
+      box-shadow: none;
+    }
+    .active{
+      color: hsl(233, 8%, 62%);
+      font-size: 16px;
+      font-weight: 400;
+      margin: auto 20px;
+      
+    }
+    .active:hover{
+      color: hsl(233, 26%, 24%);
+      padding: 28px 0px;
+      border-bottom: 5px solid hsl(136, 65%, 51%);
+    }
+    .icon{
+      display: none;
+    }
+    .nav-btn{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 8%;
+    }
 }
