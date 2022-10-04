@@ -278,6 +278,10 @@
 
 @media (min-width:770px){
 
+    *{
+        overflow-x: hidden;
+    }
+
     /*nav section*/
   
     .topnav{
@@ -287,7 +291,7 @@
     .logo-link{
         top: 30px;
         left: 8%;
-      }
+    }
     .topnav #myLinks{
       display: inline-block;
       background-color: hsl(0, 0%, 100%);
@@ -321,4 +325,45 @@
         top: 10px;
         right: 8%;
     }
+
+    /*welcome section*/
+
+    .wel-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .wel-img{
+        display: none;
+    }
+    .wel-img-pc{
+        display: inline-block;
+        height: 125vh;
+        transform: translateX(57%) translateY(-25%);
+        position: absolute;
+    }
+    .wel-phn-img{
+        position: absolute;
+        width: 55vw;
+        height: 125vh;
+        transform:translateX(97%) translateY(-140px);
+    }
+    .wel-text{
+        grid-column: 1;
+        margin: 142px 120px;
+    }
+    .wel-heading{
+        text-align: left;
+        font-size: 58px;
+    }
+    .wel-para{
+        text-align: left;
+        font-size: 20px;
+        margin: 30px auto;
+    }
+    .wel-btn{
+        margin: 10px 0px 30px;
+        place-self: start;
+    }
+
+    /*feature section*/
 }
